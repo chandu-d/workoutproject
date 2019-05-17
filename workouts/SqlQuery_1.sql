@@ -15,7 +15,8 @@ workout_id int  identity primary key
 );
 
 
-create table workout_active(
+
+create table Workout_Activess(
 id int identity primary key,
 workout_id int foreign key references workout_collection(workout_id),
 start_time time,
@@ -24,4 +25,4 @@ end_date date,
 end_time time,
 comment varchar(64),
 status bit
-) 
+)
