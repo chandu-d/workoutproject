@@ -51,7 +51,37 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="projectmodel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projectmodel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="projectmodel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projectmodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="projectmodel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projectmodel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="workout model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>workout model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="workout model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>workout model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="workout model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>workout model.edmx</DependentUpon>
+    </Compile>
     <Compile Include="workout.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -67,11 +97,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>workout.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Workout_Activss.cs">
+      <DependentUpon>projectmodel.tt</DependentUpon>
+    </Compile>
     <Compile Include="workout_category.cs">
-      <DependentUpon>workout.tt</DependentUpon>
+      <DependentUpon>workout model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="workout_categorys.cs">
+      <DependentUpon>projectmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="workout_collection.cs">
-      <DependentUpon>workout.tt</DependentUpon>
+      <DependentUpon>workout model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="workout_collections.cs">
+      <DependentUpon>projectmodel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -81,11 +120,45 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>workout.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="workout model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>workout model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="projectmodel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>projectmodel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="projectmodel.edmx.diagram">
+      <DependentUpon>projectmodel.edmx</DependentUpon>
+    </None>
+    <None Include="workout model.edmx.diagram">
+      <DependentUpon>workout model.edmx</DependentUpon>
+    </None>
     <None Include="workout.edmx.diagram">
       <DependentUpon>workout.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="projectmodel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>projectmodel.edmx</DependentUpon>
+      <LastGenOutput>projectmodel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="projectmodel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>projectmodel.edmx</DependentUpon>
+      <LastGenOutput>projectmodel.cs</LastGenOutput>
+    </Content>
+    <Content Include="workout model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>workout model.edmx</DependentUpon>
+      <LastGenOutput>workout model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="workout model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>workout model.edmx</DependentUpon>
+      <LastGenOutput>workout model.cs</LastGenOutput>
+    </Content>
     <Content Include="workout.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>workout.edmx</DependentUpon>
