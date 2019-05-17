@@ -12,6 +12,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "businesslogic", "businesslo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "workout.test", "unittest\workout.test.csproj", "{C9F6D36E-1ED4-47BC-9303-9D642C95DB2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "workoutui", "workoutui\workoutui.csproj", "{824B21CA-AA75-4C64-95B0-9189E436B943}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "workoutwebapi", "workoutwebapi\workoutwebapi.csproj", "{981DA662-E934-4C17-B0FB-16DC385C4B29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +30,14 @@ Global
 		{C9F6D36E-1ED4-47BC-9303-9D642C95DB2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9F6D36E-1ED4-47BC-9303-9D642C95DB2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9F6D36E-1ED4-47BC-9303-9D642C95DB2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{824B21CA-AA75-4C64-95B0-9189E436B943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{824B21CA-AA75-4C64-95B0-9189E436B943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{824B21CA-AA75-4C64-95B0-9189E436B943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{824B21CA-AA75-4C64-95B0-9189E436B943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{981DA662-E934-4C17-B0FB-16DC385C4B29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981DA662-E934-4C17-B0FB-16DC385C4B29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981DA662-E934-4C17-B0FB-16DC385C4B29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981DA662-E934-4C17-B0FB-16DC385C4B29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
