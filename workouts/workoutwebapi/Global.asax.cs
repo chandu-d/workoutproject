@@ -13,5 +13,12 @@ namespace workoutwebapi
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
+        protected void Application_BeginRequest()
+        {
+            if(HttpContext.Current.Request.HttpMethod=="Options")
+            {
+                HttpContext.Current.Response.Flush();
+            }
+        }
     }
 }
